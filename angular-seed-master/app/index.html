@@ -25,7 +25,7 @@
   <![endif]-->
 
   <div ng-view></div>
-{{1+1}}
+{{1+2}}
   <div>Angular seed app: v<span app-version></span></div>
 
   <!-- In production use:
@@ -38,5 +38,60 @@
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/directives.js"></script>
+  <h1>Tipster</h1><!-- Tipster Title-->
+    <form name="Calc">
+      <table border="1">
+        <tr>
+        <td> 
+           <h1>Total Price</h1><!-- total price Text Title-->
+          <input type="text" name="priceOfMeat" size="16" /> <!-- This is the total price textbox-->
+        </td>
+        </tr>
+        
+        <tr>
+        <td>
+         <h1>Number of people</h1><!-- total price Text Title-->
+          <input type="text" name="numOfPeople" size="16" /> <!-- This is the total number of people-->
+        </td>
+        </tr>
+        
+        <tr>
+        <td>
+        
+        <h1>Percentage of tip</h1><!-- total price Text Title-->
+          <input type="text" name="percentOfTip" size="16" /> <!-- This is the percentage of tip textbox-->
+        </td>
+        </tr>
+        
+        <tr>
+        <td> 
+       <button type="button">Calculate!</button>
+        </td>
+        </tr>
+        
+        <tr>
+        <td>
+        <h1>Tip price</h1><!-- total price Text Title-->
+          <input type="text" name="tipFinalPrice" size="16" /> <!-- This is the tip final price-->
+        </td>
+        </tr>
+        
+        <tr>
+        <td>
+        <h1>Total price</h1><!-- total price Text Title-->
+          <input type="text" name="finalPrice" size="16" /> <!-- This is the  final price-->
+        </td>
+        </tr>
+        
+         <tr>
+        <td>
+        <h1>Total price per person</h1><!-- total price Text Title-->
+          <input type="text" name="finalPricePerPerson" size="16" /> <!-- This is the  final price per person-->
+        </td>
+        </tr>
+        
+        
+      </table>
+    </form>
 </body>
 </html>
