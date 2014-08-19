@@ -1,1 +1,46 @@
-<p>This is the partial for view 1.</p>
+
+   <!-- <h1>Tip$ter</h1> Tipster Title-->
+   <font size="5" color = "red"> Tip$ter</font>
+<!-- total price Text Title-->
+   
+    <form name="Calc">
+      <table border="10">
+        <tr>
+        <td> 
+           <font size="5" color = ""> Price of meal</font>
+<!-- total price Text Title-->
+          <input type="text" name="priceOfMeal" size="10" ng-model="num1" /> <!-- This is the total price textbox-->
+        </td>
+        </tr>
+        <tr>
+        <td>
+        
+        <h1>Tip Percentage</h1>
+         <input type="radio" name="tip" value=".15" ng-model="percent">15%<br> 
+         
+         <input type="radio" name="tip" value=".18" ng-model="percent">18%<br>
+         
+         <input type="radio" name="tip" value=".20" ng-model="percent">20%<br>
+         
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <h1>Tip price</h1>
+          {{num1 * percent}}
+        </td>
+        </tr>
+        
+        <tr>
+        <td>
+        <h1>Total price</h1>
+       {{ totalPrice }}
+           
+        </td>
+        </tr>
+        
+         <tr>
+       
+        
+      </table>
+    </form>

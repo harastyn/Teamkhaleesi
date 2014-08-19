@@ -1,10 +1,7 @@
-'use strict';
+var myApp = angular.module("myApple", []);
 
-/* Controllers */
-
-angular.module('myApp.controllers', [])
-  .controller('MyCtrl1', ['$scope', function($scope) {
-  	$scope.calculateTip = function() {
+myApp.controller("AppCtrl", function($scope) {
+  $scope.calculateTip = function() {
     alert();
   }
   
@@ -23,7 +20,6 @@ angular.module('myApp.controllers', [])
   
     console.log('percent changed');
   });
-  }])
-  .controller('MyCtrl2', ['$scope', function($scope) {
 
-  }]);
+});
+
